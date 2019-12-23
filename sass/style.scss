@@ -1,0 +1,293 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:300,400&display=swap');
+
+@font-face {
+    font-family: 'Menlo Regular';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Menlo Regular'), url('../fonts/Menlo-Regular.woff') format('woff');
+}
+
+$black: #1e1e1e;
+$dark: #404040;
+$medium: #676867;
+$light: #7d7d7d;
+$white: #fff;
+$blue: #6089b4;
+$yellow: #ffd700;
+$red: #c7444a;
+$green: #9aa83a;
+$orange: #ce6700;
+$purple: #9872a2;
+
+*,
+*::after,
+*::before {
+    margin: 0;
+    padding: 0;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+:root {
+    font-size: 15px;
+    line-height: 1.5rem;
+}
+
+.white {
+    color: $white
+}
+
+.blue {
+    color: $blue
+}
+
+.yellow {
+    color: $yellow
+}
+
+.red {
+    color: $red
+}
+
+.green {
+    color: $green
+}
+
+.orange {
+    color: $orange
+}
+
+.purple {
+    color: $purple
+}
+
+body {
+    height: 100vh;
+    background-image: url(../img/mac-bg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -ms-flex-pack: distribute;
+    justify-content: space-around;
+
+    a {
+        color: inherit;
+        text-decoration: none;
+
+        &:hover {
+            background-color: $light;
+        }
+    }
+}
+
+#tabs-container {
+    font-family: 'Menlo Regular', 'Courier New', monospace;
+    color: $medium;
+    background-color: $black;
+    position: relative;
+    width: 700px;
+    max-width: calc(100% - 50px);
+    margin: 0 auto;
+    border-radius: 4px;
+    -webkit-box-shadow: 0 0 10px rgba(0, 0, 0, .8);
+    box-shadow: 0 0 10px rgba(0, 0, 0, .8);
+
+    #app-header {
+        background-color: $medium;
+        height: 23px;
+        border-radius: 4px 4px 0 0;
+        position: relative;
+
+        &>div {
+            position: absolute;
+            top: 5px;
+            border-radius: 50%;
+            width: 12px;
+            height: 12px;
+            background-color: white;
+            -webkit-box-shadow: 0 0 2px rgba(0, 0, 0, .5) inset;
+            box-shadow: 0 0 2px rgba(0, 0, 0, .5) inset;
+
+            &:first-child {
+                background-color: #fc605c;
+                left: 8px;
+            }
+
+            &:nth-child(2) {
+                background-color: #fdbc40;
+                left: 28px;
+            }
+
+            &:nth-child(3) {
+                background-color: #34c749;
+                left: 48px;
+            }
+        }
+
+        h1 {
+            color: $white;
+            font-family: 'Open Sans', sans-serif;
+            font-weight: 300;
+            font-size: .8rem;
+            text-align: center;
+        }
+    }
+
+    nav {
+        font-family: 'Open Sans', sans-serif;
+        color: $white;
+
+        ul {
+            list-style: none;
+            display: -webkit-box;
+            display: -ms-flexbox;
+            display: flex;
+            -webkit-box-orient: horizontal;
+            -webkit-box-direction: normal;
+            -ms-flex-direction: row;
+            flex-direction: row;
+            -ms-flex-wrap: nowrap;
+            flex-wrap: nowrap;
+            -webkit-box-pack: start;
+            -ms-flex-pack: start;
+            justify-content: flex-start;
+
+            li {
+                background: $dark;
+                padding: 7px 15px;
+                font-size: .85rem;
+                cursor: pointer;
+                border-radius: 0 0 1px 1px;
+
+                @media (min-width: 400px) {
+                    padding: 7px 15px 7px 35px;
+                    background-repeat: no-repeat;
+                    background-position: 15px 12px;
+
+                    &.active {
+                        background-color: $black;
+                    }
+
+                    &:first-child {
+                        background-image: url(../img/html5.png);
+                    }
+
+                    &:nth-child(2) {
+                        background-image: url(../img/css3.png);
+                    }
+
+                    &:nth-child(3) {
+                        background-image: url(../img/javascript.png);
+                    }
+                }
+            }
+        }
+    }
+
+    section {
+        display: none;
+        height: 400px;
+        max-height: calc(100vh - 120px);
+        overflow-x: auto;
+        padding: 30px 15px 0px 5px;
+
+        &.active {
+            display: block;
+        }
+
+        ol {
+            list-style-type: none;
+            counter-reset: number;
+            min-width: 400px;
+            padding-bottom: 30px;
+
+            li {
+                padding-left: 10px;
+                position: relative;
+                margin-left: 60px;
+
+                &::before {
+                    counter-increment: number;
+                    content: counter(number)"\a0";
+                    position: absolute;
+                    left: -40px;
+                    width: 27px;
+                    text-align: right;
+                    color: $light;
+                }
+
+                &.level-2 {
+                    padding-left: 48px;
+                }
+
+                &.jobs {
+                    padding-left: 46px;
+
+                    &-first {
+                        padding-left: 46px;
+                        text-indent: -36px;
+                    }
+                }
+
+                &.centers {
+                    padding-left: 75px;
+
+                    &-first {
+                        padding-left: 75px;
+                        text-indent: -65px;
+                    }
+                }
+
+                &.publications {
+                    padding-left: 56px;
+
+                    &-first {
+                        padding-left: 56px;
+                        text-indent: -46px;
+                    }
+                }
+
+            }
+        }
+
+        &::-webkit-scrollbar {
+            width: 13px;
+        }
+
+        &::-webkit-scrollbar-track {
+            background: $black;
+            border-top: 1px solid rgba(255, 255, 255, .1);
+            border-right: 1px solid rgba(255, 255, 255, .1);
+            border-left: 1px solid rgba(255, 255, 255, .1);
+            border-bottom: 1px solid $black;
+        }
+
+        &::-webkit-scrollbar-thumb {
+            background: $medium;
+
+            &:hover {
+                background: $light;
+            }
+        }
+    }
+
+
+    #tab-footer {
+        font-family: 'Open Sans', sans-serif;
+        color: $white;
+        background-color: $medium;
+        font-size: .8rem;
+        border-radius: 0 0 4px 4px;
+        text-align: right;
+        padding-right: 15px;
+        font-weight: 300;
+        min-height: 23px;
+    }
+}
