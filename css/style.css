@@ -71,6 +71,9 @@ body a {
 body a:hover {
   background-color: #7d7d7d;
 }
+body abbr {
+  text-decoration: none;
+}
 
 #tabs-container {
   font-family: "Menlo Regular", "Courier New", monospace;
