@@ -140,19 +140,19 @@ body a:hover {
 }
 #tabs-container nav ul li {
   background: #404040;
-  padding: 7px 15px;
+  padding: 7px 10px;
   font-size: 0.85rem;
   cursor: pointer;
   border-radius: 0 0 1px 1px;
+}
+#tabs-container nav ul li.active {
+  background-color: #1e1e1e;
 }
 @media (min-width: 400px) {
   #tabs-container nav ul li {
     padding: 7px 15px 7px 35px;
     background-repeat: no-repeat;
     background-position: 15px 12px;
-  }
-  #tabs-container nav ul li.active {
-    background-color: #1e1e1e;
   }
   #tabs-container nav ul li:first-child {
     background-image: url(../img/html5.png);
@@ -177,7 +177,7 @@ body a:hover {
 #tabs-container section ol {
   list-style-type: none;
   counter-reset: number;
-  min-width: 400px;
+  min-width: 280px;
   padding-bottom: 30px;
 }
 #tabs-container section ol li {
@@ -217,6 +217,11 @@ body a:hover {
 #tabs-container section ol li.publications-first {
   padding-left: 56px;
   text-indent: -46px;
+}
+@media only screen and (min-width: 450px) {
+  #tabs-container section ol {
+    min-width: 400px;
+  }
 }
 #tabs-container section::-webkit-scrollbar {
   width: 13px;
