@@ -1,7 +1,4 @@
 $(document).ready(function(){
-    var $active_tab = $('section.active').attr('id');
-    
-    $('#app-header h1 span').html($active_tab);
     
     $('#index-link').click(function(){
         $(this).addClass('active');
