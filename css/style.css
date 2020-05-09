@@ -50,6 +50,7 @@
 
 body {
   height: 100vh;
+  overflow: hidden;
   background-image: url(../img/mac-bg.jpg);
   background-repeat: no-repeat;
   background-size: cover;
@@ -74,8 +75,7 @@ body a:hover {
 body abbr {
   text-decoration: none;
 }
-
-#tabs-container {
+body #tabs-container {
   font-family: "Menlo Regular", "Courier New", monospace;
   color: #676867;
   background-color: #1e1e1e;
@@ -86,14 +86,34 @@ body abbr {
   border-radius: 4px;
   -webkit-box-shadow: 0 0 10px rgba(0, 0, 0, 0.8);
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.8);
+  transition: 0.1s all ease-in;
 }
-#tabs-container #app-header {
+body #tabs-container.maximized {
+  width: 100%;
+  max-width: 100%;
+  height: 100vh;
+  margin: 0;
+}
+body #tabs-container.maximized #app-header div:nth-child(3).hover {
+  background-image: url(../img/maximized.jpg);
+}
+body #tabs-container.maximized section {
+  height: 100%;
+}
+body #tabs-container.maximized #tab-footer {
+  display: none;
+}
+body #tabs-container.minimized {
+  margin-top: 300vh;
+  width: 40px;
+}
+body #tabs-container #app-header {
   background-color: #676867;
   height: 23px;
   border-radius: 4px 4px 0 0;
   position: relative;
 }
-#tabs-container #app-header > div {
+body #tabs-container #app-header > div {
   position: absolute;
   top: 5px;
   border-radius: 50%;
@@ -103,30 +123,44 @@ body abbr {
   -webkit-box-shadow: 0 0 2px rgba(0, 0, 0, 0.5) inset;
   box-shadow: 0 0 2px rgba(0, 0, 0, 0.5) inset;
 }
-#tabs-container #app-header > div:first-child {
+body #tabs-container #app-header > div:first-child {
   background-color: #fc605c;
   left: 8px;
 }
-#tabs-container #app-header > div:nth-child(2) {
+body #tabs-container #app-header > div:nth-child(2) {
   background-color: #fdbc40;
   left: 28px;
 }
-#tabs-container #app-header > div:nth-child(3) {
+body #tabs-container #app-header > div:nth-child(3) {
   background-color: #34c749;
   left: 48px;
 }
-#tabs-container #app-header h1 {
+body #tabs-container #app-header > div.hover {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+body #tabs-container #app-header > div.hover:first-child {
+  background-image: url(../img/close.jpg);
+}
+body #tabs-container #app-header > div.hover:nth-child(2) {
+  background-image: url(../img/minimize.jpg);
+}
+body #tabs-container #app-header > div.hover:nth-child(3) {
+  background-image: url(../img/maximize.jpg);
+}
+body #tabs-container #app-header h1 {
   color: #fff;
   font-family: "Open Sans", sans-serif;
   font-weight: 300;
   font-size: 0.8rem;
   text-align: center;
 }
-#tabs-container nav {
+body #tabs-container nav {
   font-family: "Open Sans", sans-serif;
   color: #fff;
 }
-#tabs-container nav ul {
+body #tabs-container nav ul {
   list-style: none;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -141,54 +175,54 @@ body abbr {
   -ms-flex-pack: start;
   justify-content: flex-start;
 }
-#tabs-container nav ul li {
+body #tabs-container nav ul li {
   background: #404040;
   padding: 7px 10px;
   font-size: 0.85rem;
   cursor: pointer;
   border-radius: 0 0 1px 1px;
 }
-#tabs-container nav ul li.active {
+body #tabs-container nav ul li.active {
   background-color: #1e1e1e;
 }
 @media only screen and (min-width: 400px) {
-  #tabs-container nav ul li {
+  body #tabs-container nav ul li {
     padding: 7px 15px 7px 35px;
     background-repeat: no-repeat;
     background-position: 15px 12px;
   }
-  #tabs-container nav ul li:first-child {
+  body #tabs-container nav ul li:first-child {
     background-image: url(../img/html5.png);
   }
-  #tabs-container nav ul li:nth-child(2) {
+  body #tabs-container nav ul li:nth-child(2) {
     background-image: url(../img/css3.png);
   }
-  #tabs-container nav ul li:nth-child(3) {
+  body #tabs-container nav ul li:nth-child(3) {
     background-image: url(../img/javascript.png);
   }
 }
-#tabs-container section {
+body #tabs-container section {
   display: none;
   height: 400px;
   max-height: calc(100vh - 120px);
   overflow-x: auto;
   padding: 30px 15px 0px 5px;
 }
-#tabs-container section.active {
+body #tabs-container section.active {
   display: block;
 }
-#tabs-container section ol {
+body #tabs-container section ol {
   list-style-type: none;
   counter-reset: number;
   min-width: 280px;
   padding-bottom: 30px;
 }
-#tabs-container section ol li {
+body #tabs-container section ol li {
   padding-left: 10px;
   position: relative;
   margin-left: 60px;
 }
-#tabs-container section ol li::before {
+body #tabs-container section ol li::before {
   counter-increment: number;
   content: counter(number) " ";
   position: absolute;
@@ -197,52 +231,52 @@ body abbr {
   text-align: right;
   color: #7d7d7d;
 }
-#tabs-container section ol li.level-2 {
+body #tabs-container section ol li.level-2 {
   padding-left: 48px;
 }
-#tabs-container section ol li.jobs {
+body #tabs-container section ol li.jobs {
   padding-left: 46px;
 }
-#tabs-container section ol li.jobs-first {
+body #tabs-container section ol li.jobs-first {
   padding-left: 46px;
   text-indent: -36px;
 }
-#tabs-container section ol li.centers {
+body #tabs-container section ol li.centers {
   padding-left: 75px;
 }
-#tabs-container section ol li.centers-first {
+body #tabs-container section ol li.centers-first {
   padding-left: 75px;
   text-indent: -65px;
 }
-#tabs-container section ol li.publications {
+body #tabs-container section ol li.publications {
   padding-left: 56px;
 }
-#tabs-container section ol li.publications-first {
+body #tabs-container section ol li.publications-first {
   padding-left: 56px;
   text-indent: -46px;
 }
 @media only screen and (min-width: 450px) {
-  #tabs-container section ol {
+  body #tabs-container section ol {
     min-width: 400px;
   }
 }
-#tabs-container section::-webkit-scrollbar {
+body #tabs-container section::-webkit-scrollbar {
   width: 13px;
 }
-#tabs-container section::-webkit-scrollbar-track {
+body #tabs-container section::-webkit-scrollbar-track {
   background: #1e1e1e;
   border-top: 1px solid rgba(255, 255, 255, 0.1);
   border-right: 1px solid rgba(255, 255, 255, 0.1);
   border-left: 1px solid rgba(255, 255, 255, 0.1);
   border-bottom: 1px solid #1e1e1e;
 }
-#tabs-container section::-webkit-scrollbar-thumb {
+body #tabs-container section::-webkit-scrollbar-thumb {
   background: #676867;
 }
-#tabs-container section::-webkit-scrollbar-thumb:hover {
+body #tabs-container section::-webkit-scrollbar-thumb:hover {
   background: #7d7d7d;
 }
-#tabs-container #tab-footer {
+body #tabs-container #tab-footer {
   font-family: "Open Sans", sans-serif;
   color: #fff;
   background-color: #676867;
@@ -252,6 +286,72 @@ body abbr {
   padding-right: 15px;
   font-weight: 300;
   min-height: 23px;
+}
+body #dock {
+  text-align: center;
+  position: absolute;
+  bottom: -60px;
+  left: 0;
+  right: 0;
+  transition: 0.1s all ease-in;
+}
+body #dock button {
+  background: rgba(255, 255, 255, 0.3);
+  display: inline-block;
+  padding: 7px 7px 3px;
+  border-radius: 3px 3px 0 0;
+  box-shadow: 0 0 3px 1px rgba(0, 0, 0, 0.2);
+  border: none;
+}
+body #dock button img {
+  width: 40px;
+  height: 40px;
+  transition: 0.1s transform ease-in;
+  cursor: pointer;
+}
+body #dock button img:hover {
+  transform: scale(1.07);
+}
+body #dock.show {
+  bottom: 0px;
+}
+body #desktop-icon {
+  width: 95px;
+  margin: 0 auto;
+  border: none;
+  background: transparent;
+  display: none;
+}
+body #desktop-icon div {
+  border-radius: 2px;
+  padding: 5px 2px 2px 3px;
+  margin: 0 auto 5px;
+  width: 60px;
+  text-align: center;
+}
+body #desktop-icon div img {
+  width: 45px;
+}
+body #desktop-icon span {
+  color: #fff;
+  font-family: "Open Sans", sans-serif;
+  line-height: 1.2;
+  font-weight: 600;
+  border-radius: 2px;
+  display: inline-block;
+  padding: 2px 3px 3px;
+  text-shadow: 0 2px 5px #000;
+}
+body #desktop-icon.focus div {
+  border: 2px solid #a0a2a9;
+  background-color: rgba(0, 0, 0, 0.2);
+}
+body #desktop-icon.focus span {
+  background: #1067de;
+  text-shadow: none;
+}
+body #desktop-icon.show {
+  display: block;
 }
 
 /*# sourceMappingURL=style.css.map */
