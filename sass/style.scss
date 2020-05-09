@@ -344,6 +344,7 @@ body {
         left: 0;
         right: 0;
         transition: .1s all ease-in;
+        opacity: 0;
         button {
             background: rgba(255,255,255,.3);
             display: inline-block;
@@ -364,6 +365,7 @@ body {
         }
         &.show {
             bottom: 0px;
+            opacity: 1;
         }
     }
 

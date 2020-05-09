@@ -291,6 +291,7 @@ body #dock {
   left: 0;
   right: 0;
   transition: 0.1s all ease-in;
+  opacity: 0;
 }
 body #dock button {
   background: rgba(255, 255, 255, 0.3);
@@ -311,6 +312,7 @@ body #dock button img:hover {
 }
 body #dock.show {
   bottom: 0px;
+  opacity: 1;
 }
 body #desktop-icon {
   width: 95px;
