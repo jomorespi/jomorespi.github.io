@@ -1,39 +1,10 @@
 $(document).ready(function(){
-    
-    $('#index-link').click(function(){
-        $(this).addClass('active');
-        $('#skills-link').removeClass('active');
-        $('#experience-link').removeClass('active');
-        
-        $('section#index').addClass('active');
-        $('section#skills').removeClass('active');
-        $('section#experience').removeClass('active');
+    $('.link').click(function(){
+        var link = $(this).attr('data-link');
 
-        $('#app-header h1 span').html('index.html');
-    });
-    
-    $('#skills-link').click(function(){
+        $('section').removeClass('active');
+        $('.link').removeClass('active');
         $(this).addClass('active');
-        $('#index-link').removeClass('active');
-        $('#experience-link').removeClass('active');
-        
-        $('section#skills').addClass('active');
-        $('section#index').removeClass('active');
-        $('section#experience').removeClass('active');
-
-        $('#app-header h1 span').html('skills.css');
+        $('#' + link).addClass('active');
     });
-    
-    $('#experience-link').click(function(){
-        $(this).addClass('active');
-        $('#index-link').removeClass('active');
-        $('#skills-link').removeClass('active');
-        
-        $('section#experience').addClass('active');
-        $('section#skills').removeClass('active');
-        $('section#index').removeClass('active');
-
-        $('#app-header h1 span').html('experience.js');
-    });
-    
 });
