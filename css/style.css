@@ -273,9 +273,6 @@ body #tabs-container section::-webkit-scrollbar-track {
 body #tabs-container section::-webkit-scrollbar-thumb {
   background: #676867;
 }
-body #tabs-container section::-webkit-scrollbar-thumb:hover {
-  background: #7d7d7d;
-}
 body #tabs-container #tab-footer {
   font-family: "Open Sans", sans-serif;
   color: #fff;
