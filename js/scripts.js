@@ -6,6 +6,14 @@ $(document).ready(function(){
         $('.link').removeClass('active');
         $(this).addClass('active');
         $('#' + link).addClass('active');
+
+        if(link == 'index') {
+            $('h1 > span').html('index.html');
+        } else if(link == 'skills') {
+            $('h1 > span').html('skills.css');
+        } else if(link == 'experience') {
+            $('h1 > span').html('experience.js');
+        }
     });
 
     $('#app-header > div').mouseover(function(){
