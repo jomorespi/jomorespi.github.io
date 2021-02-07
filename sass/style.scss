@@ -134,44 +134,55 @@ body {
             &>div {
                 position: absolute;
                 top: 5px;
-                border-radius: 50%;
-                width: 12px;
+                left: 8px;
+                display: flex;
+                justify-content: space-between;
+                width: 54px;
                 height: 12px;
-                background-color: white;
-                -webkit-box-shadow: 0 0 2px rgba(0, 0, 0, .5) inset;
-                box-shadow: 0 0 2px rgba(0, 0, 0, .5) inset;
-    
-                &:first-child {
-                    background-color: #fc605c;
-                    left: 8px;
-                }
-    
-                &:nth-child(2) {
-                    background-color: #fdbc40;
-                    left: 28px;
-                }
-    
-                &:nth-child(3) {
-                    background-color: #34c749;
-                    left: 48px;
-                }
                 
-                &.hover {
-                    background-position: center;
-                    background-repeat: no-repeat;
-                    background-size: cover;
+                &>div {
+                    border-radius: 50%;
+                    width: 12px;
+                    height: 12px;
+                    // background-color: white;
+                    -webkit-box-shadow: 0 0 2px rgba(0, 0, 0, .5) inset;
+                    box-shadow: 0 0 2px rgba(0, 0, 0, .5) inset;
+                    
                     &:first-child {
-                        background-image: url(../img/close.jpg);
+                        background-color: #fc605c;
+                        left: 8px;
                     }
-                    
+        
                     &:nth-child(2) {
-                        background-image: url(../img/minimize.jpg);
+                        background-color: #fdbc40;
+                        left: 28px;
                     }
-                    
+        
                     &:nth-child(3) {
-                        background-image: url(../img/maximize.jpg);
+                        background-color: #34c749;
+                        left: 48px;
                     }
+                }
     
+                
+                &:hover {
+                    &>div {
+                        background-position: center;
+                        background-repeat: no-repeat;
+                        background-size: cover;
+    
+                        &:first-child {
+                            background-image: url(../img/close.jpg);
+                        }
+                        
+                        &:nth-child(2) {
+                            background-image: url(../img/minimize.jpg);
+                        }
+                        
+                        &:nth-child(3) {
+                            background-image: url(../img/maximize.jpg);
+                        }
+                    }
                 }
             }
     
