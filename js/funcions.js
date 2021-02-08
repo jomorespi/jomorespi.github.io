@@ -2,13 +2,13 @@
 
 // Navegació pestanyes
 
-var tablink = document.querySelectorAll('.link');
+const tablink = document.querySelectorAll('.link');
 
 tablink.forEach((item) => {
     item.addEventListener('click', function(){
-        var link = this.getAttribute("data-link");
-        var title = this.textContent;
-        var section = document.querySelector("section");
+        let link = this.getAttribute("data-link");
+        let title = this.textContent;
+        let section = document.querySelector("section");
 
         document.querySelector('section.active').classList.remove('active');
         document.querySelector('.link.active').classList.remove('active');
@@ -21,13 +21,13 @@ tablink.forEach((item) => {
 
 // Comportament barra superior
 
-var closeBtn = document.querySelector('#app-header > div > div:first-child');
-var minBtn = document.querySelector('#app-header > div > div:nth-child(2)');
-var maxBtn = document.querySelector('#app-header > div > div:last-child');
-var tabsContainer = document.getElementById("tabs-container");
-var desktopIcon = document.getElementById("desktop-icon");
-var dock = document.getElementById("dock");
-var dockImg = document.querySelector("#dock img");
+const closeBtn = document.querySelector('#app-header > div > div:first-child');
+const minBtn = document.querySelector('#app-header > div > div:nth-child(2)');
+const maxBtn = document.querySelector('#app-header > div > div:last-child');
+const tabsContainer = document.getElementById("tabs-container");
+const desktopIcon = document.getElementById("desktop-icon");
+const dock = document.getElementById("dock");
+const dockImg = document.querySelector("#dock img");
 
 closeBtn.addEventListener("click", function(){
     tabsContainer.style.display = "none";
