@@ -2,16 +2,13 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>https://jomorespi.github.io/entrades/entrada-de-prova/</loc>
-    <lastmod>2022-12-03T21:59:52+01:00</lastmod>
-  </url><url>
     <loc>https://jomorespi.github.io/</loc>
-    <lastmod>2022-12-03T21:59:52+01:00</lastmod>
-  </url><url>
-    <loc>https://jomorespi.github.io/posts/</loc>
-    <lastmod>2022-12-03T21:59:52+01:00</lastmod>
+    <lastmod>2022-12-02T12:05:16+01:00</lastmod>
   </url><url>
     <loc>https://jomorespi.github.io/entrades/necessito-un-blog/</loc>
+    <lastmod>2022-12-02T12:05:16+01:00</lastmod>
+  </url><url>
+    <loc>https://jomorespi.github.io/posts/</loc>
     <lastmod>2022-12-02T12:05:16+01:00</lastmod>
   </url><url>
     <loc>https://jomorespi.github.io/categories/</loc>
