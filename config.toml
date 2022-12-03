@@ -1,0 +1,15 @@
+baseURL = "https://jomorespi.github.io/"
+languageCode = "ca"
+defaultContentLanguage = "ca"
+title = "Jordi Moreno. Blog"
+description = "Blog"
+theme = "jordi"
+paginate = 8
+publishDir = "docs"
+
+[params]
+    Description = "Blog personal d'en Jordi Moreno Crespi, desenvolupador web i, a estones, escriptor."
+    Author = "Jordi Moreno Crespi"
+
+[permalinks]
+    posts = '/entrades/:title'
