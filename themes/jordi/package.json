@@ -1,0 +1,8 @@
+{
+  "name": "hugo-jordi",
+  "version": "1.0",
+  "repository": "https://github.com/jomorespi/jomorespi.github.io",
+  "author": "jomorespi <hola@jordimoreno.cat>",
+  "license": "MIT",
+  "private": true
+}

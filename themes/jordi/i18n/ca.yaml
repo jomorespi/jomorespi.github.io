@@ -1,0 +1,26 @@
+- id: prev_page
+  translation: 'Pàgina anterior'
+
+- id: next_page
+  translation: 'Pàgina següent'
+
+- id: back_home
+  translation: 'Tornar a la portada'
+
+- id: link_mastodon
+  translation: 'El meu compte de Mastodon'
+
+- id: link_github
+  translation: 'El meu perfil a GitHub'
+
+- id: link_codepen
+  translation: 'El meu perfil a Codepen'
+
+- id: link_linkedin
+  translation: 'El meu perfil a LinkedIn'
+
+- id: 404_title
+  translation: 'Error 404: Pàgina no trobada'
+
+- id: 404_text
+  translation: 'Sembla que la pàgina que busques no existeix. Mira de tornar a la portada i navegar entre els posts.'

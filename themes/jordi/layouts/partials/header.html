@@ -1,0 +1,45 @@
+<header>
+	<div class="site-title">
+		{{ if .IsHome }}
+			<h1>{{ .Site.Title }}</h1>
+		{{ else }}
+			<a href="{{ .Site.BaseURL }}" class="nav-link">
+				<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" style="fill: currentColor;"><title>{{ i18n "back_home" }}</title><path d="M12.707 17.293 8.414 13H18v-2H8.414l4.293-4.293-1.414-1.414L4.586 12l6.707 6.707z"></path></svg>
+			</a>
+			<span>{{ .Site.Title }}</span>
+		{{ end }}
+	</div>
+
+	<ul class="social-links">
+		<li>
+			<a href="https://mastodont.cat/@jomorespi" target="_blank" class="mastodon" rel="me">
+				<span class="sr-only">{{ i18n "link_mastodon" }}</span>
+			</a>
+		</li>
+		<li>
+			<a href="https://github.com/jomorespi/" target="_blank" class="github">
+				<span class="sr-only">{{ i18n "link_github" }}</span>
+			</a>
+		</li>
+		<li>
+			<a href="https://codepen.io/jomorespi" target="_blank" class="codepen">
+				<span class="sr-only">{{ i18n "link_codepen" }}</span>
+			</a>
+		</li>
+		<li>
+			<a href="https://www.linkedin.com/in/jomorespi/" target="_blank" class="linkedin">
+				<span class="sr-only">{{ i18n "link_linkedin" }}</span>
+			</a>
+		</li>
+	</ul>
+
+	{{ with .Site.Menus.main }}
+	<nav>
+		<ul>
+			{{ range . }}
+			<li><a href="{{ .URL | relURL }}">{{ .Name }}</a></li>
+			{{ end }}
+		</ul>
+	</nav>
+	{{ end }}
+</header>
