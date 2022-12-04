@@ -4,6 +4,12 @@
 - id: next_page
   translation: 'Pàgina següent'
 
+- id: pagin_num
+  translation: 'Pàgina'
+
+- id: pagin_of
+  translation: 'de'
+
 - id: back_home
   translation: 'Tornar a la portada'
 
