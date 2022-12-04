@@ -199,5 +199,6 @@ footer {
     color: #a2e3c4;
     background: #fffbdc; }
 
-.e404 h1 {
+.e404 h1,
+.list h1 {
   margin-bottom: 1rem; }

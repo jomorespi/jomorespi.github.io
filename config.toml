@@ -6,7 +6,7 @@ description = "Blog"
 theme = "jordi"
 paginate = 8
 publishDir = "docs"
-disableKinds = ["taxonomy", "taxonomyTerm"]
+disableKinds = ["taxonomy", "taxonomyTerm", "pages"]
 
 [params]
     Description = "Blog personal d'en Jordi Moreno Crespi, desenvolupador web i, a estones, escriptor."
