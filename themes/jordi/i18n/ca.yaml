@@ -23,4 +23,4 @@
   translation: 'Error 404: Pàgina no trobada'
 
 - id: 404_text
-  translation: 'Sembla que la pàgina que busques no existeix. Mira de tornar a la portada i navegar entre els posts.'
+  translation: 'Sembla que la pàgina que busques no existeix. Pots mirar de tornar a la portada i navegar entre les entrades.'

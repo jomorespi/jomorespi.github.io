@@ -198,3 +198,6 @@ footer {
   .nav-link:hover {
     color: #a2e3c4;
     background: #fffbdc; }
+
+.e404 h1 {
+  margin-bottom: 1rem; }
