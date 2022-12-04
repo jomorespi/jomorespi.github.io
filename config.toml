@@ -15,4 +15,3 @@ timeZone = "Europe/Madrid"
 
 [permalinks]
     posts = '/entrades/:title'
-    

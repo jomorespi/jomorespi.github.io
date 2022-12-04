@@ -7,7 +7,6 @@
 	<title>{{ .Title }}</title>
 	{{ with .Site.Params.description }}<meta name="description" content="{{ . }}">{{ end }}
 	{{ with .Site.Params.author }}<meta name="author" content="{{ . }}">{{ end }}
-	<!-- <link rel="stylesheet" href="{{ "css/style.css" | relURL }}"> -->
 	{{ with .OutputFormats.Get "RSS" -}}
 		{{ printf `<link rel="%s" type="%s" href="%s" title="%s">` .Rel .MediaType.Type .RelPermalink $.Site.Title | safeHTML }}
 	{{- end }}
@@ -17,10 +16,10 @@
 	<link href="https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,300;0,400;1,300;1,400&display=swap" rel="stylesheet">
 
 
-	{{ $sass := resources.Get "sass/main.sass" }}
-	{{ $style := $sass | resources.ToCSS }}
+	{{ $sass := resources.Get "css/main.sass" }}
+	{{ $options := (dict "outputStyle" "compressed" "includePaths" (slice "node_modules/myscss")) }}
+	{{ $style := $sass | resources.ToCSS $options }}
 	<link rel="preload" href="{{ $style.Permalink }}" as="style" />
 	<link rel="stylesheet" href="{{ $style.Permalink }}">
-
 
 </head>
