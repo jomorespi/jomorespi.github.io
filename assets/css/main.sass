@@ -1,4 +1,16 @@
-// Variables
+// INDEX ****************************************************
+// 01. Variables
+// 02. Reset
+// 03. Base
+// 04. Global
+// 05. Header
+// 06. Footer
+// 07. Blog Archive
+// 08. Single Post
+// ***********************************************************
+    
+    
+// 01. Variables *******************************************************
 $primary: #a2e3c4
 $secondary: #fffbdc
 $dark: #1e1f21
@@ -7,7 +19,7 @@ $light: #fefefe
 $md: 768px
 $lg: 992px
   
-// Reset
+// 02. Reset *******************************************************
 *,
 *:after,
 *:before
@@ -15,21 +27,23 @@ $lg: 992px
   padding: 0
   box-sizing: border-box
 
-// Base
-.sr-only
-    border: 0 !important;
-    clip: rect(1px, 1px, 1px, 1px) !important;
-    -webkit-clip-path: inset(50%) !important;
-    clip-path: inset(50%) !important;
-    height: 1px !important;
-    overflow: hidden !important;
-    margin: -1px !important;
-    padding: 0 !important;
-    position: absolute !important;
-    width: 1px !important;
-    white-space: nowrap !important;
+// 03. Base *******************************************************
 
-// Styles
+// sr-only class. Source: https://gist.github.com/ffoodd/000b59f431e3e64e4ce1a24d5bb36034
+.sr-only
+    border: 0 !important
+    clip: rect(1px, 1px, 1px, 1px) !important
+    -webkit-clip-path: inset(50%) !important
+    clip-path: inset(50%) !important
+    height: 1px !important
+    overflow: hidden !important
+    margin: -1px !important
+    padding: 0 !important
+    position: absolute !important
+    width: 1px !important
+    white-space: nowrap !important
+
+// 04. Global *******************************************************
 
 \:root
     font-size: clamp(16px, 2vw, 18px)
@@ -72,7 +86,6 @@ time
     margin-top: 5px
     font-size: 14px
     background-color: $secondary
-    // color: $dark
     padding: 3px 5px
 
 .container 
@@ -82,6 +95,7 @@ time
     margin-right: auto
     padding-left: 20px
     padding-right: 20px
+
 header,
 footer
     position: fixed
@@ -89,8 +103,15 @@ footer
     right: 10px
     z-index: 20
     backdrop-filter: blur(2px)
-    // border-radius: 3px
     border: 1px solid $primary
+
+.e404,
+.list
+    h1
+        margin-bottom: 1rem
+
+// 05. Header *******************************************************
+
 header
     min-height: 40px
     display: flex
@@ -138,30 +159,17 @@ header
                     background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='36' height='36' viewBox='0 0 24 24' style='fill: %23fefefe;transform: ;msFilter:;'%3E%3Cpath d='M16 17.24c2.5-.3 4.69-1.84 5-3.25a33.59 33.59 0 0 0 .4-5.42C21.33 4.23 18.48 3 18.48 3A17.64 17.64 0 0 0 12 2a17.64 17.64 0 0 0-6.48 1S2.68 4.23 2.68 8.57v3.44c.1 4.24.78 8.42 4.7 9.46A14.73 14.73 0 0 0 12 22a9.21 9.21 0 0 0 3.54-.81l-.07-1.64A11.41 11.41 0 0 1 12 20c-1.8-.06-3.71-.19-4-2.4a4.26 4.26 0 0 1 0-.63 22.68 22.68 0 0 0 4 .54 23.6 23.6 0 0 0 4-.27zm-6.54-9.8q-1.35 0-1.35 1.62v5.1H6V8.9a3.78 3.78 0 0 1 .82-2.56 2.85 2.85 0 0 1 2.23-1 2.68 2.68 0 0 1 2.4 1.23l.52.87.52-.87a2.68 2.68 0 0 1 2.4-1.23 2.85 2.85 0 0 1 2.23 1A3.78 3.78 0 0 1 18 8.9v5.26h-2.11v-5.1q0-1.62-1.35-1.62c-1 0-1.51.64-1.51 1.92v2.79H11V9.36c0-1.28-.54-1.92-1.54-1.92z'%3E%3C/path%3E%3C/svg%3E")
                 &.linkedin
                     background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' style='fill: %23fefefe;' viewBox='0 0 448 512'%3E%3Cpath d='M100.28 448H7.4V148.9h92.88zM53.79 108.1C24.09 108.1 0 83.5 0 53.8a53.79 53.79 0 0 1 107.58 0c0 29.7-24.1 54.3-53.79 54.3zM447.9 448h-92.68V302.4c0-34.7-.7-79.2-48.29-79.2-48.29 0-55.69 37.7-55.69 76.7V448h-92.78V148.9h89.08v40.8h1.3c12.4-23.5 42.69-48.3 87.88-48.3 94 0 111.28 61.9 111.28 142.3V448z'/%3E%3C/svg%3E")
+
+// 06. Footer *******************************************************
+    
 footer
     bottom: 10px
     font-size: .8em
     text-align: center
     padding: 5px
 
-.single
-    h1
-        font-size: 2rem
-        margin-bottom: .5rem
-    .post-content
-        margin-top: 2rem
-        line-height: 1.5
-        p, ul, ol, blockquote, h2, h3, h4, h5, h6
-            margin-bottom: 1rem
-        p, ul, ol, blockquote
-            margin-top: 1rem
-        h2, h3, h4, h5, h6
-            margin-top: 2rem
-        a
-            box-shadow: inset 0 -.35em 0 $primary
-            transition: .5s box-shadow ease-in
-            &:hover
-                box-shadow: inset 0 -1.05em 0 $primary
+
+// 07. Blog archive *******************************************************
 
 .summary
     margin-bottom: 3rem
@@ -169,16 +177,12 @@ footer
     position: relative
     h2
         font-size: 1.2rem
-        // text-transform: uppercase
         font-weight: normal
-        // display: inline-block
-        // padding-top: .75rem
         margin-right: .5rem
     &::before
         content: ""
         display: block
         position: absolute
-        // top: .05rem
         left: 0
         width: 1rem
         height: 1rem
@@ -216,7 +220,24 @@ footer
         color: $primary
         background: $secondary
 
-.e404,
-.list
+
+// 08. Single post *******************************************************
+
+.single
     h1
-        margin-bottom: 1rem
+        font-size: 2rem
+        margin-bottom: .5rem
+    .post-content
+        margin-top: 2rem
+        line-height: 1.5
+        p, ul, ol, blockquote, h2, h3, h4, h5, h6
+            margin-bottom: 1rem
+        p, ul, ol, blockquote
+            margin-top: 1rem
+        h2, h3, h4, h5, h6
+            margin-top: 2rem
+        a
+            box-shadow: inset 0 -.35em 0 $primary
+            transition: .5s box-shadow ease-in
+            &:hover
+                box-shadow: inset 0 -1.05em 0 $primary
