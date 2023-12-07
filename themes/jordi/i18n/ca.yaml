@@ -10,6 +10,9 @@
 - id: pagin_of
   translation: 'de'
 
+- id: link_main
+  translation: 'Saltar al contingut'
+
 - id: back_home
   translation: 'Tornar a la portada'
 

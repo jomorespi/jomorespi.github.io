@@ -1,5 +1,5 @@
 {{ define "main" }}
-	<main class="container">
+	<main id="primary" class="container">
 		{{ $paginator := .Paginate (where .Site.RegularPages "Type" "in" .Site.Params.mainSections) }}
 		{{ range $paginator.Pages }}
 			{{ .Render "summary" }}
