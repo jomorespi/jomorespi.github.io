@@ -6,17 +6,7 @@
     <description>Recent content on Jordi Moreno. Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ca</language>
-    <lastBuildDate>Thu, 07 Dec 2023 12:05:16 +0100</lastBuildDate><atom:link href="https://jomorespi.github.io/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>Prémer un interruptor</title>
-      <link>https://jomorespi.github.io/entrades/premer-un-interruptor/</link>
-      <pubDate>Thu, 07 Dec 2023 12:05:16 +0100</pubDate>
-      
-      <guid>https://jomorespi.github.io/entrades/premer-un-interruptor/</guid>
-      <description>Aquest matí he hagut d&amp;rsquo;anar al metge. Al meu ambulatori hi ha un dispensador de números com el de les carnisseries, però al cap d&amp;rsquo;una estona he descobert que la pantalla no actualitzava la xifra a mesura que la cua avançava. I, un cop he set a la sala d&amp;rsquo;espera, he hagut d&amp;rsquo;estar atent perquè la doctora em cridaria pel nom. Res especialment molest, oi?
-Qui em coneix ja ho sap: sordejo.</description>
-    </item>
-    
+    <lastBuildDate>Sat, 03 Dec 2022 12:05:16 +0100</lastBuildDate><atom:link href="https://jomorespi.github.io/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Necessito un blog?</title>
       <link>https://jomorespi.github.io/entrades/necessito-un-blog/</link>
@@ -25,6 +15,16 @@ Qui em coneix ja ho sap: sordejo.</description>
       <guid>https://jomorespi.github.io/entrades/necessito-un-blog/</guid>
       <description>Juraria que no.
 Anys enrere n&amp;rsquo;havia tingut. Quan la gent tenia blogs. Va ser a base de remenar plataformes on crear-ne que vaig acabar a WordPress. I va ser a partir de WordPress que vaig tornar a trastejar amb la idea d&amp;rsquo;aprendre a fer webs. Una idea que ja havia desestimat en un parell d&amp;rsquo;episodis de la meva vida (venint de maquetar amb QuarkXPress i InDesign, Dreamweaver no es comportava com jo esperava i el codi no em semblava una eina que pogués ser capaç d&amp;rsquo;assimilar).</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://jomorespi.github.io/entrades/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://jomorespi.github.io/entrades/</guid>
+      <description>Aquest matí he hagut d&amp;rsquo;anar al metge. Al meu ambulatori hi ha un dispensador de números com el de les carnisseries, però al cap d&amp;rsquo;una estona he descobert que la pantalla no actualitzava la xifra a mesura que la cua avançava. I, un cop he set a la sala d&amp;rsquo;espera, he hagut d&amp;rsquo;estar atent perquè la doctora em cridaria pel nom. Res especialment molest, oi?
+Qui em coneix ja ho sap: sordejo.</description>
     </item>
     
   </channel>
