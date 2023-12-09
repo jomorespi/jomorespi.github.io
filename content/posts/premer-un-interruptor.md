@@ -1,6 +1,7 @@
 ---
 title: "Prémer un interruptor"
 date: 2023-12-07T12:05:16+01:00
+tags: ["accessibilitat", "discapacitat", "sordesa", "drets", "comunicació", "equitat"]
 draft: false
 ---
 
