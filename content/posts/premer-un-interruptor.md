@@ -1,3 +1,9 @@
+---
+title: "Prémer un interruptor"
+date: 2023-12-07T12:05:16+01:00
+draft: false
+---
+
 Aquest matí he hagut d'anar al metge. Al meu ambulatori hi ha un dispensador de números com el de les carnisseries, però al cap d'una estona he descobert que la pantalla no actualitzava la xifra a mesura que la cua avançava. I, un cop he set a la sala d'espera, he hagut d'estar atent perquè la doctora em cridaria pel nom. Res especialment molest, oi?
 
 Qui em coneix ja ho sap: sordejo. Sóc dur d'orella. No sóc completament sord, al contrari. Depenent del volum i el to de la teva veu, de la distància que ens separa, del soroll ambiental, de l'acústica de l'espai i de la direcció cap on corri el vent, entre d'altres, podrem mantenir una conversa normal sense que em facin falta els audiòfons. Si els duc posats la podrem mantenir depenent exactament dels mateixos paràmetres però partint de barems prou més tolerables.
