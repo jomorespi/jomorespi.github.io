@@ -1,13 +1,13 @@
 <article class="summary">
 	<h2><a href="{{ .Permalink }}">{{ .Title }}</a></h2>
-	<ul class="tags">
-		{{ range .Params.tags }}
-		<li	>{{ . }}</li>
-		{{ end }}
-	</ul>
-	<time datetime="{{ .Date.Format "2006-01-02T15:04:05" }}">{{ .Date.Format "02/01/2006" }}</time>
-	{{ if .Params.tags }}
+	{{ with .Params.tags }}
+		<ul class="tags">
+			{{ range . }}
+			<li>{{ . }}</li>
+			{{ end }}
+		</ul>
 	{{ end }}
+	<time datetime="{{ .Date.Format "2006-01-02T15:04:05" }}">{{ .Date.Format "02/01/2006" }}</time>
 	<!-- <div>
 		{{ .Summary }}
 		{{ if .Truncated }}

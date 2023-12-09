@@ -81,6 +81,18 @@ blockquote
         color: $primary
         font-style: normal
 
+.tags
+    font-size: .8rem
+    line-height: 1
+    list-style: none
+    margin: .3rem 0
+    display: flex
+    gap: .4rem
+    flex-wrap: wrap
+    li
+        &::before
+            content: "\0023"
+
 time
     display: inline-block
     margin-top: 5px
@@ -194,18 +206,6 @@ footer
     &:hover
         &::before
             left: .5rem
-
-    .tags
-        font-size: .8rem
-        line-height: 1
-        list-style: none
-        margin: .3rem 0
-        display: flex
-        gap: .4rem
-        flex-wrap: wrap
-        li
-            &::before
-                content: "\0023"
 
 .pagination
     font-size: 1.2rem
