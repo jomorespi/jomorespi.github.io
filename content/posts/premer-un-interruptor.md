@@ -2,7 +2,7 @@
 title: "Prémer un interruptor"
 date: 2023-12-07T12:05:16+01:00
 tags: ["accessibilitat", "discapacitat", "sordesa", "drets", "comunicació", "equitat"]
-draft: false
+draft: true
 ---
 
 Aquest matí he hagut d'anar al metge. Al meu ambulatori hi ha un dispensador de números com el de les carnisseries, però al cap d'una estona he descobert que la pantalla no actualitzava la xifra a mesura que la cua avançava. I, un cop he set a la sala d'espera, he hagut d'estar atent perquè la doctora em cridaria pel nom. Res especialment molest, oi?

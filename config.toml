@@ -15,3 +15,8 @@ timeZone = "Europe/Madrid"
 
 [permalinks]
     posts = '/entrades/:title'
+
+[markup]
+  [markup.goldmark]
+    [markup.goldmark.renderer]
+        hardWraps = true
