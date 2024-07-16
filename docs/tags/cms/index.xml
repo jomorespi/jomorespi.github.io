@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Jordi Moreno. Blog</title>
-    <link>https://jomorespi.github.io/</link>
-    <description>Recent content on Jordi Moreno. Blog</description>
+    <title>cms on Jordi Moreno. Blog</title>
+    <link>https://jomorespi.github.io/tags/cms/</link>
+    <description>Recent content in cms on Jordi Moreno. Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ca</language>
     <lastBuildDate>Sat, 03 Dec 2022 12:05:16 +0100</lastBuildDate>
-    <atom:link href="https://jomorespi.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://jomorespi.github.io/tags/cms/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Necessito un blog?</title>
       <link>https://jomorespi.github.io/entrades/necessito-un-blog/</link>
