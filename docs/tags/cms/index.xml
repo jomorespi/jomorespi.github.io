@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>cms on Jordi Moreno. Blog</title>
+    <title>Cms on Jordi Moreno. Blog</title>
     <link>https://jomorespi.github.io/tags/cms/</link>
-    <description>Recent content in cms on Jordi Moreno. Blog</description>
-    <generator>Hugo -- gohugo.io</generator>
+    <description>Recent content in Cms on Jordi Moreno. Blog</description>
+    <generator>Hugo</generator>
     <language>ca</language>
     <lastBuildDate>Sat, 03 Dec 2022 12:05:16 +0100</lastBuildDate>
     <atom:link href="https://jomorespi.github.io/tags/cms/index.xml" rel="self" type="application/rss+xml" />
